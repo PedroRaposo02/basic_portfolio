@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="container">
+                <div class="leftSide">
+                    <a href="#hero">Pedro Raposo</a>
+                </div>
+                <div class="rightSide">
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                </div>
+            </div>
+        </nav>
+
+        <section id="hero">
+            <div class="container">
+                <div class="leftSide">
+                    <h1>Hello, 
+                        <br>I am
+                        <span class="accent">Pedro</span>
+                        <br/>Web Developer!
+                    </h1>
+                    <button id="openModal" onclick="openModal()">Contact me</button>
+                    <div class="social">
+                        <a href="/">
+                            <img src="images/linkedIn.svg" alt="LinkedIn Logo" />
+                        </a>
+                        <a href="/">
+                            <img src="images/github.svg" alt="GitHub Logo" />
+                        </a>
+                        <a href="/">
+                            <img src="images/youtube.svg" alt="Youtube Logo" />
+                        </a>
+                        <a href="/">
+                            <img src="images/instagram.svg" alt="Instagram Logo" />
+                        </a>
+                    </div>
+                </div>
+                <div class="rightSide">
+                    <div class="outer">
+                        <img src="images/profilePic.png" alt="Profile Pic" class="flip-horizontal"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About me</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia unde dignissimos, numquam obcaecati amet pariatur fugiat ipsa. Maiores expedita porro alias nemo deserunt iure fugiat beatae delectus sit quod, tenetur ipsam. Provident expedita harum, earum quos enim, ipsa deserunt eum hic cum, fuga maxime distinctio obcaecati rerum neque at! Optio, ea! Alias nam, quam voluptatum tenetur odit architecto rerum quod placeat delectus ad ea ratione, error consequuntur nulla natus. Quam deleniti amet nihil modi est ullam optio possimus similique, molestias autem, aut molestiae! Expedita tempora sit totam sapiente, labore, asperiores consequatur nobis explicabo dolorum autem minima necessitatibus sequi placeat itaque.</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>My Work</h2>
+                <div class="projects">
+                    <div class="outer">
+                        <img src="images/project1.jpg" alt="Project 1" />
+                        <img src="images/project2.jpg" alt="Project 2" />
+                        <img src="images/project3.jpg" alt="Project 3" />
+                        <img src="images/project4.jpg" alt="Project 4" />
+                        <img src="images/project5.jpg" alt="Project 5" />
+                        <img src="images/project6.jpg" alt="Project 6" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            Pedro Raposo © 2023
+        </footer>
+
+        <div id="modalOuter" class="closeModal">
+            <div class="container">
+                <h2>Contact Details</h2>
+                <hr />
+                <p><strong>Name:</strong>Pedro Raposo</p>
+                <p><strong>Email:</strong>peraposo@hotmail.com</p>
+                <p><strong>Telephone:</strong>+351 924208266</p>
+                <p><strong>Address:</strong>Somewhere Over the raimbow</p>
+                <p><strong>CV:</strong><a href="cv.pdf">Download my CV</a></p>
+                <div class="xButton" onclick="closeModal()">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+
+</html>
